@@ -65,7 +65,7 @@ export class FacultadComponent {
       <td>${ (estudianteSeleccionado.saberPro.lecturaCritica / 80) * 100 }%</td>
       <td>${estudianteSeleccionado.saber11.lecturaCritica}</td>
       <td>${ (estudianteSeleccionado.saber11.lecturaCritica / 100) * 100 }%</td>
-      <td>${ (((estudianteSeleccionado.saberPro.lecturaCritica / 80) * 100)- estudianteSeleccionado.saber11.lecturaCritica)}%</td>
+      <td>${ (((estudianteSeleccionado.saberPro.lecturaCritica / 80) * 100)- (estudianteSeleccionado.saber11.lecturaCritica/ 100) * 100)}%</td>
 
     </tr>
     <tr>
@@ -74,7 +74,7 @@ export class FacultadComponent {
       <td>${ (estudianteSeleccionado.saberPro.razonamiento / 80) * 100 }%</td>
       <td>${estudianteSeleccionado.saber11.razonamiento}</td>
       <td>${ (estudianteSeleccionado.saber11.razonamiento / 100) * 100 }%</td>
-      <td>${ (((estudianteSeleccionado.saberPro.razonamiento / 80) * 100)- estudianteSeleccionado.saber11.razonamiento)}%</td>
+      <td>${ (((estudianteSeleccionado.saberPro.razonamiento / 80) * 100)- (estudianteSeleccionado.saber11.razonamiento/ 100) * 100)}%</td>
 
     </tr>
     <tr>
@@ -83,7 +83,7 @@ export class FacultadComponent {
       <td>${ (estudianteSeleccionado.saberPro.ingles / 80) * 100 }%</td>
       <td>${estudianteSeleccionado.saber11.ingles}</td>
       <td>${ (estudianteSeleccionado.saber11.ingles / 100) * 100 }%</td>
-      <td>${ (((estudianteSeleccionado.saberPro.ingles / 80) * 100)- estudianteSeleccionado.saber11.ingles)}%</td>
+      <td>${ (((estudianteSeleccionado.saberPro.ingles / 80) * 100)- (estudianteSeleccionado.saber11.ingles/ 100) * 100)}%</td>
 
     </tr>
     <tr>
@@ -92,7 +92,7 @@ export class FacultadComponent {
     <td>${ (estudianteSeleccionado.saberPro.ciudadanas / 80) * 100 }%</td>
     <td>${estudianteSeleccionado.saber11.ciudadanas}</td>
     <td>${ (estudianteSeleccionado.saber11.ciudadanas / 100) * 100 }%</td>
-    <td>${ (((estudianteSeleccionado.saberPro.ciudadanas / 80) * 100)- estudianteSeleccionado.saber11.ciudadanas)}%</td>
+    <td>${ (((estudianteSeleccionado.saberPro.ciudadanas / 80) * 100)- (estudianteSeleccionado.saber11.ciudadanas/ 100) * 100)}%</td>
   </tr>
   </tbody>
 </table>
