@@ -1,0 +1,58 @@
+
+<h1>Bienvenidos a la {{name}}</h1>
+<section>
+    <div class="container">
+        <div class="row" style="background-color: gainsboro">
+            <div class="col-6" >
+                <label for=""style="background-color: aqua;">Nombre del programa :</label>
+                @if (programas.length > 0) {
+                    <select (change)="onChange($event)">
+                        @for (programa of programas; track programa.id) {
+                            <option [value]="programa.id">{{programa.nombre}}</option>
+                        }
+                    </select>
+                }
+            </div>
+            <div class="col-6">
+                <div class="row">
+                    <div class="col-7">
+                        <label for=""style="background-color: aqua;">Código del programa :</label>
+                    </div>
+                    <div class="col-5">
+                        <label for="">{{programaSeleccionado.id}}</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+            <div class="row" style="background-color: gainsboro">
+                <div class="col-6">
+                    <label for=""style="background-color: aqua;">Nombre del estudiante :</label>
+                  @if (programaId.length > 0) {
+                    <select name="" id="estudiantes" (change)="mostrarIdEstudiante()">
+                      @for (estudiante of estudiantesSeleccionados; track estudiante.id) {
+                        <option [value]="estudiante.id">{{estudiante.nombre}}</option>
+                      }
+                    </select>
+                  }
+                </div>
+                <div class="col-6">
+                    <div class="row">
+                        <div class="col-7">
+                            <label for=""style="background-color: aqua;">Id del estudiante :</label>
+                        </div>
+                        <div class="col-5">
+                            <span id="idEstudianteSeleccionado"></span>
+                        </div>
+                    </div>
+
+                </div>
+              </div>
+              
+              <!-- Elemento para mostrar la información de SABER PRO -->
+              <div id="saberProInfo" style="background-color: gainsboro">
+                <!-- Aquí se llenará la información de SABER PRO -->
+              </div>
+        </div>
+</section>
